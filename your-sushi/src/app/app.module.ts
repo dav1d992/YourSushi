@@ -18,9 +18,10 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
 import { CarouselModule } from 'primeng/carousel';
 import { HomeComponent } from './pages/home/home.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { CarouselItemComponent } from './components/carousel/components/carousel-item/carousel-item.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeComponent, CarouselComponent],
+  declarations: [AppComponent, NavbarComponent, HomeComponent, CarouselComponent, CarouselItemComponent],
   imports: [
     AppRoutingModule,
     BrowserModule,
