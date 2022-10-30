@@ -1,0 +1,15 @@
+<p-menubar [model]="items">
+  <div>
+    <button
+      [(ngModel)]="darkMode"
+      pButton
+      icon="{{ darkMode ? 'pi pi-sun' : 'pi pi-moon' }}"
+      (click)="
+        toggleTheme(
+          darkMode ? 'bootstrap4-light-purple' : 'bootstrap4-dark-purple'
+        )
+      "
+      style="margin-left: 0.25em"
+    ></button>
+  </div>
+</p-menubar>
