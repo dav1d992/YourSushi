@@ -11,13 +11,16 @@ import { InputTextModule } from 'primeng/inputtext';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { CheckboxModule } from 'primeng/checkbox';
 import { RadioButtonModule } from 'primeng/radiobutton';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { MenubarModule } from 'primeng/menubar';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ToggleButtonModule } from 'primeng/togglebutton';
+import { CarouselModule } from 'primeng/carousel';
+import { HomeComponent } from './pages/home/home.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent],
+  declarations: [AppComponent, NavbarComponent, HomeComponent, CarouselComponent],
   imports: [
     AppRoutingModule,
     BrowserModule,
@@ -32,8 +35,7 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
     FormsModule,
     MenubarModule,
     ToggleButtonModule,
-    FormsModule,
-    ReactiveFormsModule
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
